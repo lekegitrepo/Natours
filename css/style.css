@@ -12,6 +12,10 @@ Dark green: #28b485
   
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   color: #777;
   font-family: 'lato', sans-serif;
