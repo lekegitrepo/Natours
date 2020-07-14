@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for a tour/travel/tourist website(natours)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lekegitrepo/Natours.git"
+  },
+  "author": "Adeleke Temitayo <mailadeleketemitayo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lekegitrepo/Natours/issues"
+  },
+  "homepage": "https://github.com/lekegitrepo/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
