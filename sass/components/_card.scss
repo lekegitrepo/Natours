@@ -1,4 +1,5 @@
 .card {
+  //Functionality
   height: 50rem;
   -moz-perspective: 150rem;
   -webkit-perspective: 150rem;
@@ -10,13 +11,12 @@
     backface-visibility: hidden;
     border-radius: .3rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    color: #fff;
-    font-size: 2rem;
     height: 50rem;
     left: 0;
+    overflow: hidden;
     position: absolute;
     top: 0;
-    transition: all .8s;
+    transition: all .8s ease;
     width: 100%;
 
     &--front {
@@ -33,10 +33,60 @@
   }
 
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  //Front side
+  &__picture {
+    background-size: cover;
+    background-blend-mode: screen;
+    height: 23rem;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    
+    &--1 {
+      background-image: linear-gradient(to right bottom, 
+                         $color-secondary-light, 
+                         $color-secondary-dark),
+      url(../img/nat-5.jpg);
+    }
+
+    &--2 {
+      background-image: url(../img/nat-5.jpg);
+    }
+
+    &--3 {
+      background-image: url(../img/nat-5.jpg);
+    }
+  }
+
+  &__heading {
+    color: $color-white;
+    font-size: 2.8rem;
+    font-weight: 300;
+    position: absolute;
+    right: 2rem;
+    text-transform: uppercase;
+    text-align: right;
+    top: 12rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom,
+         rgba($color-secondary-light, .85),
+         rgba($color-secondary-dark, .85));
+    }
   }
 }
