@@ -321,7 +321,7 @@ body {
     font-weight: 100; }
 
 .story {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   font-size: 1.6rem;
@@ -365,6 +365,20 @@ body {
   .story:hover .story__img {
     filter: blur(3px) brightness(80%);
     transform: translateX(-4rem) scale(1); }
+
+.bg-video {
+  height: 100%;
+  left: 0;
+  opacity: .15;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1; }
+  .bg-video__content {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
 
 .row {
   margin: 0 auto;
@@ -433,5 +447,5 @@ body {
   padding: 25rem 0 15rem 0; }
 
 .section-stories {
-  background-color: #f7f7f7f7;
-  padding: 15rem 0; }
+  padding: 15rem 0;
+  position: relative; }
