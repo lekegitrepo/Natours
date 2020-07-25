@@ -1,0 +1,23 @@
+.navigation {
+  &__checkbox {}
+
+  &__button {}
+
+  &__background {
+    background-image: radial-gradient($color-primary, $color-primary-light);
+    border-radius: 50%;
+    height: 6rem;
+    position: fixed;
+    right: 6.5rem;
+    top: 6.5rem;
+    width: 6rem;
+  }
+
+  &__nav {}
+
+  &__list {}
+
+  &__item {}
+
+  &__link {}
+}
