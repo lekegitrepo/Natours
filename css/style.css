@@ -472,10 +472,32 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    border-radius: 0.3rem;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    color: #fff;
-    width: 75%;
-    height: 50rem; }
+    display: table;
+    overflow: hidden;
+    width: 75%; }
+  .popup__left {
+    display: table-cell;
+    width: 33.3333%; }
+  .popup__right {
+    display: table-cell;
+    padding: 3rem 5rem;
+    vertical-align: middle;
+    width: 66.66667; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
