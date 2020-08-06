@@ -29,6 +29,6 @@ body {
   padding: 3rem;
 
   @include respond(tab-port) {
-    padding: 1px;
+    padding: 0;
   }
 }
