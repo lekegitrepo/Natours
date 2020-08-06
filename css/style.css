@@ -284,6 +284,9 @@ body {
   padding: 2.5rem;
   text-align: center;
   transition: transform .3s; }
+  @media only screen and (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     color: transparent;
@@ -292,6 +295,9 @@ body {
     margin-bottom: .5rem;
     -webkit-background-clip: text;
     background-clip: text; }
+    @media only screen and (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -850,7 +856,7 @@ body {
     transform: skewY(7deg); }
   @media only screen and (max-width: 56.25em) {
     .section-features {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7f7;

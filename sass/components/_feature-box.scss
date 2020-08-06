@@ -7,6 +7,10 @@
   text-align: center;
   transition: transform .3s;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &__icon {
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     color: transparent;
@@ -16,6 +20,10 @@
 
     -webkit-background-clip: text;
             background-clip: text;
+    
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
