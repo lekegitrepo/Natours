@@ -9,6 +9,16 @@
   transform: skewX(-12deg);
   width: 75%;
 
+  @include respond(tab-port) {
+    padding: 4rem;
+    padding-left: 7rem;
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+
   &__shape {
     float: left;
     height: 15rem;
@@ -21,6 +31,10 @@
 
     -webkit-shape-outside: circle(50% at 50% 50%);
             shape-outside: circle(50% at 50% 50%);
+    
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__img {
@@ -32,6 +46,10 @@
 
   &__text {
     transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__caption {
