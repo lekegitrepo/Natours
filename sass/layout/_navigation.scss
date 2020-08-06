@@ -15,6 +15,16 @@
     top: 6rem;
     width: 7rem;
     z-index: 2000;
+
+    @include respond(tab-port) {
+      right: 4rem;
+      top: 4rem;
+    }
+
+    @include respond(phone) {
+      right: 3rem;
+      top: 3rem;
+    }
   }
 
   &__background {
@@ -28,7 +38,15 @@
     width: 6rem;
     z-index: 1000;
 
-    //transform: scale(80);
+    @include respond(tab-port) {
+      right: 4.5rem;
+      top: 4.5rem;
+    }
+
+    @include respond(phone) {
+      right: 3.5rem;
+      top: 3.5rem;
+    }
   }
 
   &__nav {
