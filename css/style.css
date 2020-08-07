@@ -609,12 +609,20 @@ body {
     width: 75%; }
   .popup__left {
     display: table-cell;
-    width: 33.3333%; }
+    width: 33.3333%;
+    /* @include respond(tab-port) {
+      display: block;
+      width: 85%;
+    } */ }
   .popup__right {
     display: table-cell;
     padding: 3rem 5rem;
     vertical-align: middle;
-    width: 66.66667; }
+    width: 66.66667;
+    /* @include respond(tab-port) {
+      display: block;
+      width: 100%;
+    } */ }
   .popup__img {
     display: block;
     width: 100%; }
