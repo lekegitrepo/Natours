@@ -25,7 +25,7 @@ https://github.com/lekegitrepo/Natours.git
 
  ### `npm install` or `yarn install`
 
- ## Load the app in a browser
+## Load the app in a browser
 
  #### Run:
 
